@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/java/entity/Note.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/java/entity/NoteBook.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/java/entity/NoteBookGroup.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/java/service/BaseService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/java/service/NoteBookGroupService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/java/service/NoteBookService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/java/service/NoteService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/java/service/imp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/java/service/imp/UserServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/redis/annation" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/redis/dao/RedisDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/redis/synchronize/NotifyDataBase.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/redis/synchronize/RedisUpdateToDataBase.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/mark/redis/util" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/dubbo-provider.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/hibernate" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/log4j.properties" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/redis.properties" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/mark/redis/performance/RedisCompareDataBase.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/mark/redis/performance/RedisEasyTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/mark/test/InitDataToDataBase.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/mark/test/InitDataToRedis.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/mark/test/InitDubborProvider.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/mark/test/JuitTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/mark/test/MonitorSql.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/mark/test/PutArticelUrlByPage.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/mark/test/StoreToDataBaseByThread.java" charset="GBK" />
+  </component>
+</project>
