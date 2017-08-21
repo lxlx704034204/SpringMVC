@@ -149,7 +149,7 @@ public class JuitTest {
 		baseService.update(note);
 	}
 
-	// @Test
+	@Test
 	public void after() {
 		RedisCachePool pool = redisCacheManager.getRedisPoolMap().get(RedisDataBaseType.defaultType.toString());
 		Jedis jedis = pool.getResource();
@@ -157,7 +157,6 @@ public class JuitTest {
 		display(jedis);
 		pool.returnResource(jedis);
 	}
-
 	private void display(Jedis jedis) {
 		Set<String> aa = jedis.smembers("Note:createdate:2015-05-20 01:04:13.0");
 		Set<String> bb = jedis.smembers("Note:fromUrl:http://www.tuicool.com/articles/vquaei");

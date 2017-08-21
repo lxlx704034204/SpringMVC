@@ -45,16 +45,21 @@ public class NoteServiceImp implements NoteService, BaseService<Note> {
 		try {
 			pool = redisCacheManager.getRedisPoolMap().get(RedisDataBaseType.defaultType.toString());
 			System.out.print("--3-->-test-NoteServiceImp-java-findAll()-:"+ pool +"\n" );//com.mark.redis.util.RedisCachePool@2e6ba49a
-
 			jedis = pool.getResource();
+			System.out.print("--4-->-test-NoteServiceImp-java-findAll()-:"+ jedis +"\n" );//
 			// 查询不用开启事物
 			RedisDao rd = new RedisDao(jedis);
+			System.out.print("--5-->-test-NoteServiceImp-java-findAll()-:"+ rd +"\n" );//
 			Set<String> sortKey = rd.smembers("Note:index:noteId");
+			System.out.print("--6-->-test-NoteServiceImp-java-findAll()-:"+ sortKey.toString() +"\n" );//
 			noteList = (List<Note>) rd.getListBean(sortKey, Note.class, jedis);
+
+			System.out.print("--7-->-test-NoteServiceImp-java-findAll()-:"+ noteList.size() +"\n" );//
 			
 			// dubbo 调用的时候防止java.sql.Blob cannot be assigned from null ，也就是blob字段不能为空
 			delalBlob(noteList);
 		} catch (Exception e) {
+			System.out.print("--9-->-test-NoteServiceImp-java-findAll()-:"+ e.toString() +"\n" );//
 			log.error(" List<Note> findAll()--- failure: " + e.getLocalizedMessage());
 		}
 		finally {
